@@ -33,8 +33,8 @@ let queryClient=new QueryClient();
 
 let routers=createBrowserRouter([
  {path:'/',element:<Layout/>,children:[
-  {path:"home",element:<ProtectedRoute> <Home/> </ProtectedRoute>},
-  {index:true ,element:<Login/>},
+  {index:"true",element:<ProtectedRoute> <Home/> </ProtectedRoute>},
+  {path:'login' ,element:<Login/>},
   {path:'brands',element:<ProtectedRoute><Brands/></ProtectedRoute>},
   {path:'cart',element:<ProtectedRoute><Cart/></ProtectedRoute>},
   {path:'categories',element:<ProtectedRoute><Categories/></ProtectedRoute>},
@@ -42,7 +42,7 @@ let routers=createBrowserRouter([
   {path:'address',element:<ProtectedRoute><Address/></ProtectedRoute>},
   {path:'productdetails/:id',element:<ProtectedRoute><ProductDetails/></ProtectedRoute>},
   {path:'register',element:<Register/>},
-  {path:'E-Commerce',element:<Register/>},
+  {path:'E-Commerce',element:<Login/>},
   {path:'*',element:<Notfound/>}
  ]}
 ]);
