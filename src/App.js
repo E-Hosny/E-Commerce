@@ -33,8 +33,8 @@ let queryClient=new QueryClient();
 
 let routers=createBrowserRouter([
  {path:'/',element:<Layout/>,children:[
-  {index:true,element:<ProtectedRoute> <Home/> </ProtectedRoute>},
-  {path:'login',element:<Login/>},
+  {path:"home",element:<ProtectedRoute> <Home/> </ProtectedRoute>},
+  {index:true ,element:<Login/>},
   {path:'brands',element:<ProtectedRoute><Brands/></ProtectedRoute>},
   {path:'cart',element:<ProtectedRoute><Cart/></ProtectedRoute>},
   {path:'categories',element:<ProtectedRoute><Categories/></ProtectedRoute>},

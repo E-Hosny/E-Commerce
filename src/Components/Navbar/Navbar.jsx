@@ -30,7 +30,7 @@ export default function Navbar()
        {userToken!==null ?
        <>
            <li className="nav-item">
-           <Link className="nav-link" to={'/'}>Home</Link>
+           <Link className="nav-link" to={'home'}>Home</Link>
          </li>
          <li className="nav-item">
            <Link className="nav-link" to={'products'}>Products</Link>
@@ -61,7 +61,7 @@ export default function Navbar()
        : 
        <>
        <li className="nav-item">
-        <Link className="nav-link" to={"login"}>Login</Link>
+        <Link className="nav-link" to={"/"}>Login</Link>
       </li>
       <li className="nav-item">
         <Link className="nav-link" to={"register"}>Register</Link>
