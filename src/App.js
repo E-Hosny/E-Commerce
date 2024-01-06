@@ -42,6 +42,7 @@ let routers=createBrowserRouter([
   {path:'address',element:<ProtectedRoute><Address/></ProtectedRoute>},
   {path:'productdetails/:id',element:<ProtectedRoute><ProductDetails/></ProtectedRoute>},
   {path:'register',element:<Register/>},
+  {path:'E-Commerce',element:<Register/>},
   {path:'*',element:<Notfound/>}
  ]}
 ]);
