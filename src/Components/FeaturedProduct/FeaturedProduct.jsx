@@ -41,7 +41,7 @@ export default function FeaturedProduct()
 
         <div className='py-3'>
            <div className="row">
-             {!isLoading?data.data.data.map((product,idx)=>{return <div className="col-md-2" key={idx}>
+             {!isLoading?data.data.data.map((product,idx)=>{return <div className="col-md-2 col-sm-6 col-6" key={idx}>
                
                 <div className="product p-3">
                 <Link to={`/ProductDetails/${product.id}`}>

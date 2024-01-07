@@ -28,14 +28,7 @@ export default function Navbar()
         <div className="myLogo">
            <img src={logo} alt="logo" className="px-3" />
         </div>
-        <div className="myIcon">
-          <i className="fab fa-facebook m-2 " ></i>
-          <i className="fab fa-twitter m-2 " ></i>
-          <i className="fab fa-instagram m-2 " ></i>
-          <i className="fab fa-tiktok m-2 " ></i>
-          <i className="fab fa-linkedin m-2 " ></i>
-          <i className="fab fa-youtube m-2 " ></i>
-        </div>
+      
         
         
 
