@@ -21,7 +21,7 @@ export default function Navbar()
      }
    
     return<> 
-      <nav className="navbar navbar-expand bg-body-tertiary">
+      <nav className="navbar navbar-expand-sm bg-body-tertiary">
  <div className="container-fluid">
     <div className="collapse navbar-collapse d-flex align-items-center justify-content-center" id="navbarSupportedContent" >
       <ul className="navbar-nav me-auto mb-2 fw-bold test">
