@@ -1,8 +1,9 @@
 import React, { useContext } from "react";
 import style from'./Navbar.module.css'
-import {Link, useNavigate} from "react-router-dom";
+import {Link, useLocation, useNavigate} from "react-router-dom";
 import logo from '../../Assets/Images/freshcart-logo.svg'
 import { UserContext } from "../../Context/UserContext";
+
 
 
 
@@ -12,6 +13,8 @@ export default function Navbar()
 {
     let{userToken,setUserToken}=useContext(UserContext);
     let navigate=useNavigate();
+    let path=useLocation();
+    path=path.pathname
 
      function logout()
      {
@@ -35,14 +38,14 @@ export default function Navbar()
        {userToken!==null ?
        <>
            <li className="nav-item">
-           <Link className="nav-link" to={'/'}>Home</Link>
+           <Link className={path==='/'?"nav-link bg-main rounded":"nav-link"} to={'/'}>Home</Link>
          </li>
          <li className="nav-item">
-           <Link className="nav-link" to={'products'}>Products</Link>
+           <Link className={path==='/products'?"nav-link bg-main rounded":"nav-link"} to={'products'}>Products</Link>
          </li>
     
          <li className="nav-item">
-           <Link className="nav-link" to={'cart'}>Cart</Link>
+           <Link className={path==='/cart'?"nav-link bg-main rounded":"nav-link"} to={'cart'}>Cart</Link>
          </li> </>:'' }
       </ul>
        
@@ -57,10 +60,10 @@ export default function Navbar()
        : 
        <>
        <li className="nav-item">
-        <Link className="nav-link" to={"/"}>Login</Link>
+        <Link className={path==='/login'?"nav-link bg-main rounded":"nav-link"} to={"/"}>Login</Link>
       </li>
       <li className="nav-item">
-        <Link className="nav-link" to={"register"}>Register</Link>
+        <Link className={path==='/register'?"nav-link bg-main rounded":"nav-link"} to={"register"}>Register</Link>
       </li>
        </>}
       </ul>

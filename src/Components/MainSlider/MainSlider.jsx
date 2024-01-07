@@ -11,13 +11,13 @@ export default function MainSlider() {
         <div className='row g-0 my-5 '>
             <div className='col-md-9 '>
                 <OwlCarousel className='owl-theme' autoplay autoplayTimeout={1000} items={1} loop  >
-                    <div class='item'>
+                    <div className='item'>
                         <img src={img1} className='w-100 img1' alt="" />
                     </div>
-                    <div class='item'>
+                    <div className='item'>
                         <img src={img2} className='w-100 img1' alt="" />
                     </div>
-                    <div class='item'>
+                    <div className='item'>
                         <img src={img3} className='w-100 img1' alt="" />
                     </div>
 
