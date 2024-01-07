@@ -80,6 +80,17 @@ a , a:hover{
     height: 200px;
 }
 
+.myLogo
+{
+    position: relative;
+}
+
+.myIcon
+{
+    position: absolute;
+    top: 60%;
+
+}
 
 
 
